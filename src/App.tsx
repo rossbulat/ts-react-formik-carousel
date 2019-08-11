@@ -12,9 +12,9 @@ const App: React.FC = () => {
   return (
     <Wrapper>
       <div>
-        <h1>Mentorships</h1>
+        <h1>Apply for a Mentorship</h1>
         <h4>
-          JKRB mentorships are designed to help you acheive your goals with a managed program. Fill out the details below to apply for a program, and we will be in touch.
+          mentorships are designed to help you acheive your goals with a managed program. Fill out the details below and we will be in touch.
         </h4>
 
         <FormCarousel

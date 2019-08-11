@@ -39,10 +39,6 @@ export const Stage = styled.div<FormCarousel_StyledStage>`
     width: 100%;
   }
 
-  input {
-    background: #fff;
-  }
-
   .wrap {
     align-items: center;
     display: flex;
@@ -57,7 +53,7 @@ export const Stage = styled.div<FormCarousel_StyledStage>`
   .textbox {
     -moz-appearance: none;
     -webkit-appearance: none;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
     max-width: 600px;

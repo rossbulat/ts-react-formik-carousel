@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <div>
         <h1>Apply for a Mentorship</h1>
         <h4>
-          mentorships are designed to help you acheive your goals with a managed program. Fill out the details below and we will be in touch.
+          Mentorships are designed to help you acheive your goals with a managed program. Fill out the details below and we will be in touch.
         </h4>
 
         <FormCarousel

@@ -23,7 +23,6 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
   }
 
   toggleActiveStage = (index: number) => {
-
     this.setState({
       activeStage: index,
       stageOut: this.state.activeStage
@@ -31,7 +30,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
   }
 
   setStageCompleted = (index: number, completed: boolean) => {
-    let stageCompleted = Object.values(this.state.stageCompleted);
+    let stageCompleted: Array<boolean> = Object.values(this.state.stageCompleted);
     stageCompleted[index] = true;
     this.setState({ stageCompleted: stageCompleted });
   }

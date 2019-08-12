@@ -1,6 +1,6 @@
 import React from 'react';
 import { withFormik, FormikProps, FormikErrors, Form } from 'formik';
-import { FormCarousel_Form, Form_Submit, FormProps } from '../FormCarousel/types';
+import { FormCarousel_Form, Form_Submit } from '../FormCarousel/types';
 import { Checkbox } from '../FormCarousel/utils';
 import Stage from '../FormCarousel/Stage';
 
@@ -28,7 +28,7 @@ const SubmitForm: React.FC<FormCarousel_Form & FormikProps<Form_Submit>> = (prop
   );
 }
 
-const Submit = withFormik<FormCarousel_Form & FormProps, Form_Submit>({
+const Submit = withFormik<FormCarousel_Form, Form_Submit>({
   mapPropsToValues: props => {
     return {
       agree: true

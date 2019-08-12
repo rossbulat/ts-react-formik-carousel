@@ -57,9 +57,3 @@ export interface Form_Bio {
 export interface Form_Submit {
   agree: boolean
 }
-
-export interface FormProps {
-  index: number;
-  setCompleted (index: number, completed: boolean): void;
-  toggleStage (index: number): void;
-}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withFormik, FormikProps, FormikErrors, Form, Field, ErrorMessage } from 'formik';
-import { FormCarousel_Form, Form_Details, FormProps } from '../FormCarousel/types';
+import { FormCarousel_Form, Form_Details } from '../FormCarousel/types';
 import Stage from '../FormCarousel/Stage';
 
 const DetailsForm: React.FC<FormCarousel_Form & FormikProps<Form_Details>> = (props) => {
@@ -31,7 +31,7 @@ const DetailsForm: React.FC<FormCarousel_Form & FormikProps<Form_Details>> = (pr
   );
 }
 
-const Details = withFormik<FormCarousel_Form & FormProps, Form_Details>({
+const Details = withFormik<FormCarousel_Form, Form_Details>({
   mapPropsToValues: props => {
     return {
       email: '',

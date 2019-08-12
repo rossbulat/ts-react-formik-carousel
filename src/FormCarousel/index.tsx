@@ -52,7 +52,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
                 label={item.label}
                 toggle={this.toggleActiveStage}
               />
-            </React.Fragment>);
+            </React.Fragment>
           ))}
         </header>
 

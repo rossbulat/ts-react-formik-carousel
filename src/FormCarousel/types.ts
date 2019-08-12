@@ -32,9 +32,9 @@ export interface FormCarousel_StyledStage {
 }
 
 export interface FormCarousel_StageButton {
-  active?: boolean;
+  active: boolean;
   complete: boolean;
-  icon?: React.ReactNode;
+  icon: React.ReactNode;
   index: number;
   label: string;
   toggle (index: number): void;

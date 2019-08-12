@@ -12,9 +12,9 @@ const App: React.FC = () => {
   return (
     <Wrapper>
       <div>
-        <h1>Apply for a Mentorship</h1>
+        <h1>Form Carousel Demo</h1>
         <h4>
-          Mentorships are designed to help you acheive your goals with a managed program. Fill out the details below and we will be in touch.
+          Fill out your details below to complete the form.
         </h4>
 
         <FormCarousel

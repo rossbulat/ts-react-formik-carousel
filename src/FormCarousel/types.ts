@@ -15,7 +15,7 @@ export interface FormCarousel_Stage {
 export interface FormCarouselState {
   activeStage: number;
   stageOut: number;
-  stageStatus: Array<Object>;
+  stageStatus: Array<boolean>;
 }
 
 export interface FormCarousel_Form {

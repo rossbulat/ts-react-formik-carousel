@@ -15,7 +15,6 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
 
   constructor (props: FormCarouselProps) {
     super(props);
-
     const stages = props.stages.map((item: FormCarousel_Stage) => {
       return false;
     });

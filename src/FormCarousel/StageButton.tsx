@@ -35,16 +35,14 @@ export const StageButton: React.FC<FormCarousel_StageButton> = (props) => {
   `;
 
   return (
-    <div>
-      <StyledButton
-        complete={props.complete}
-        disabled={props.active ? true : false}
-        onClick={() => { props.toggle(props.index) }}
-      >
-        {props.icon !== undefined && props.icon}
-        {props.label}
-        {props.active && <span>&bull;</span>}
-      </StyledButton>
-    </div>
+    <StyledButton
+      complete={props.complete}
+      disabled={props.active ? true : false}
+      onClick={() => { props.toggle(props.index) }}
+    >
+      {props.icon !== undefined && props.icon}
+      {props.label}
+      {props.active && <span>&bull;</span>}
+    </StyledButton>
   );
 }

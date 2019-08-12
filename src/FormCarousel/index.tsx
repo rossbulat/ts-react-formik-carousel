@@ -40,21 +40,20 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
     return (
       <Wrapper>
         <header>
-          {this.props.stages.map((item: FormCarousel_Stage, i: number) => {
-            return (
-              <React.Fragment
-                key={i}>
-                {i > 0 && <FontAwesomeIcon className='separator' icon={faAngleDoubleRight} transform="grow-4" />}
-                <StageButton
-                  active={(i === this.state.activeStage ? true : false)}
-                  complete={this.state.stageCompleted[i] === true}
-                  icon={item.icon}
-                  index={i}
-                  label={item.label}
-                  toggle={this.toggleActiveStage}
-                />
-              </React.Fragment>);
-          })}
+          {this.props.stages.map((item: FormCarousel_Stage, i: number) => (
+            <React.Fragment
+              key={i}>
+              {i > 0 && <FontAwesomeIcon className='separator' icon={faAngleDoubleRight} transform="grow-4" />}
+              <StageButton
+                active={(i === this.state.activeStage ? true : false)}
+                complete={this.state.stageCompleted[i] === true}
+                icon={item.icon}
+                index={i}
+                label={item.label}
+                toggle={this.toggleActiveStage}
+              />
+            </React.Fragment>);
+          ))}
         </header>
 
         <div>

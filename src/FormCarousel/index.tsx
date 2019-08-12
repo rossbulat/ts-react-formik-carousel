@@ -10,7 +10,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
   state: FormCarouselState = {
     activeStage: 0,
     stageOut: -1,
-    stageStatus: []
+    stageCompleted: []
   };
 
   constructor (props: FormCarouselProps) {
@@ -19,7 +19,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
       return false;
     });
 
-    this.state.stageStatus = stages;
+    this.state.stageCompleted = stages;
   }
 
   toggleActiveStage = (index: number) => {
@@ -31,9 +31,9 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
   }
 
   setStageCompleted = (index: number, completed: boolean) => {
-    let stageStatus = Object.values(this.state.stageStatus);
-    stageStatus[index] = true;
-    this.setState({ stageStatus: stageStatus });
+    let stageCompleted = Object.values(this.state.stageCompleted);
+    stageCompleted[index] = true;
+    this.setState({ stageCompleted: stageCompleted });
   }
 
   render () {
@@ -48,7 +48,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
                 {i > 0 && <FontAwesomeIcon className='separator' icon={faAngleDoubleRight} transform="grow-4" />}
                 <StageButton
                   active={(i === this.state.activeStage ? true : false)}
-                  complete={this.state.stageStatus[i] === true}
+                  complete={this.state.stageCompleted[i] === true}
                   icon={item.icon}
                   index={i}
                   label={item.label}

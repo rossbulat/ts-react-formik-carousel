@@ -31,7 +31,7 @@ export class FormCarousel extends React.Component<FormCarouselProps, FormCarouse
 
   setStageCompleted = (index: number, completed: boolean) => {
     const stageCompleted: Array<boolean> = Object.values(this.state.stageCompleted);
-    stageCompleted[index] = true;
+    stageCompleted[index] = completed;
     this.setState({ stageCompleted: stageCompleted });
   }
 

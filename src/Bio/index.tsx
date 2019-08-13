@@ -49,7 +49,7 @@ const Bio = withFormik<FormCarousel_Form, Form_Bio>({
   handleSubmit: (values, formikBag) => {
     formikBag.props.setCompleted(formikBag.props.index, true);
     formikBag.props.toggleStage(formikBag.props.index + 1);
-  },
+  }
 })(BioForm);
 
 export default Bio;

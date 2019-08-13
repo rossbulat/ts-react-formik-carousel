@@ -42,14 +42,12 @@ const Details = withFormik<FormCarousel_Form, Form_Details>({
     if (values.email === '') {
       errors['email'] = 'Please provide an email';
     }
-
     return errors;
   },
-
   handleSubmit: (values, formikBag) => {
     formikBag.props.setCompleted(formikBag.props.index, true);
     formikBag.props.toggleStage(formikBag.props.index + 1);
-  },
+  }
 })(DetailsForm);
 
 export default Details;

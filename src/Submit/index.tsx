@@ -45,7 +45,7 @@ const Submit = withFormik<FormCarousel_Form, Form_Submit>({
 
   handleSubmit: (values, formikBag) => {
     formikBag.props.setCompleted(formikBag.props.index, true);
-  },
+  }
 })(SubmitForm);
 
 export default Submit;
